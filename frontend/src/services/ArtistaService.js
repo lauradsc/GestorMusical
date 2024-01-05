@@ -1,4 +1,4 @@
-//aqui, utiliza-se a biblioteca Axios para fazer a requisição de nossos dados
+//Aqui, utiliza-se a biblioteca Axios para fazer a manipulaçãp de nossos dados e operar o CRUD (Create, Read, Update, Delete)
 import axios from 'axios';
 
 export function getArtistas() {
@@ -18,7 +18,7 @@ export function AddArtista(artista) {
 }
 
 export function UpdateArtista(artista, artID) {
-    return axios.post('http://127.0.0.1:8000/gcm/' + artID + '/', {
+    return axios.put('http://127.0.0.1:8000/gcm/' + artID + '/', {
         ArtistaID:null,
         Nome: artista.Nome.value,
         Tipo: artista.Tipo.value,
@@ -27,4 +27,18 @@ export function UpdateArtista(artista, artID) {
     })
         .then(response => response.data);   
 }
+
+export function deleteArtista(artistaID) {
+    return axios.delete('http://127.0.0.1:8000/gcm/' + artistaID + '/', {
+        method: 'DELETE',
+        headers: {
+            'Aceppt': 'application/json',
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.data);
+}
+
+
+
 

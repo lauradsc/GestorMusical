@@ -1,15 +1,19 @@
+//Página de gerenciamento de artista, tendo opções de atualiza/deletar a informação do selecionado 
 import react, { useEffect, useState } from 'react';
-import { getArtistas, deleteArtista } from '../services/artista_service';
+import { getArtistas, deleteArtista } from '../services/ArtistaService.js';
 import { Table } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { MdDelete } from "react-icons/md";
 import { TfiWrite } from "react-icons/tfi";
 import AddArtistaModal from './AddArtistaModal.js';
+import UpdateArtistaModal from './UpdateArtistaModal.js';
 import '../App.css';
 
 const GerenciarArtistas = () => {
     const [artistas, setArtistas] = useState([]);
     const [addModalShow, setAddModalShow] = useState(false);
+    const [updateArtistaModal, setEditModalShow] = useState(false);
+    const [updateArtista, setAtualizarArtista] = useState([]);
     const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
@@ -33,7 +37,29 @@ const GerenciarArtistas = () => {
         setAddModalShow(true);
     }
 
+    const atualizarArtista = (e, art) => {
+        e.preventDefault();
+        setEditModalShow();
+        setAtualizarArtista(art);
+    };
+
+    const deletarArtista = (e, artistaID) => {
+        if(window.confirm('Tem certeza que quer deletar esse artista?'))
+        e.preventDefault();
+        deleteArtista(artistaID)
+        .then((result => {
+            alert(result);
+            setIsUpdated(true);
+        },
+        (error) => {
+            alert("Falha ao deletar artista");
+        }
+        ))
+    };
+
+
     const AddArtistaFechar = () => setAddModalShow(false);
+    const UpdateModalFechar = () => setAddModalShow(false);
 
     return(
         <div className="container-fluid side-container">
@@ -60,8 +86,9 @@ const GerenciarArtistas = () => {
                             <td>{art.Email}</td>
                             <td>{art.Tipo_documento}</td>
                             <td> 
-                                <Button className="mr-2" variant="primary"><TfiWrite /></Button>{''}
-                                <Button className="mr-2" variant="danger"><MdDelete /></Button>{''}
+                                <Button className="mr-2" variant="primary" onClick={event => atualizarArtista(event, art)}><TfiWrite /></Button>{''}
+                                <UpdateArtistaModal show={UpdateArtistaModal} onHide={UpdateModalFechar} setUpdated={setIsUpdated} artista={updateArtista} ></UpdateArtistaModal>
+                                <Button className="mr-2" variant="danger" onClick={event => deletarArtista(event, artistaID)}><MdDelete /></Button>{''}
                             </td>
                             </tr>
                         )}

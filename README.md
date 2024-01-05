@@ -65,11 +65,4 @@ Por ser uma área nova para mim, peço perdão outros eventuais erros e me esfor
 
 <h2>Muito obrigada pela oportunidade!😊</h2>
 
-<h4>Aqui está uma foto do erro do projeto: </h4>
-<img src="https://github.com/lauradsc/GestorMusical/assets/99484087/c136b0e4-db9c-4986-885d-53e7fd8df486">
-
-
-
-
-
 
