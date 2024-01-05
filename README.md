@@ -65,4 +65,9 @@ Por ser uma área nova para mim, peço perdão outros eventuais erros e me esfor
 
 <h2>Muito obrigada pela oportunidade!😊</h2>
 
+<h3>Aqui está uma foto do erro ocorrido: </h3>
+
+<img src="https://github.com/lauradsc/GestorMusical/assets/99484087/377392ad-5cce-4f8c-a254-788e4216e356">
+
+
 
