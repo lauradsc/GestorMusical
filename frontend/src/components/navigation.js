@@ -1,6 +1,9 @@
+
 import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 import "../App.css";
+
 import {
     CDBSidebar,
     CDBSidebarContent,
@@ -24,15 +27,15 @@ const Navigation = () => {
         </CDBSidebarHeader>
         <CDBSidebarContent>
           <CDBSidebarMenu>
-            <a href="/">
+            <NavLink exact to="/home" activeClassName="activeClicked">
                 <CDBSidebarMenuItem icon="home">Home</CDBSidebarMenuItem>
-            </a>
-            <a href="/">
+            </NavLink>
+            <NavLink exact to="/artistas" activeClassName="activeClicked">
                 <CDBSidebarMenuItem icon="list">Lista de Artistas</CDBSidebarMenuItem>
-            </a>
-            <a href="/">
+            </NavLink>
+            <NavLink exact to="/gerenciar" activeClassName="activeClicked">
                 <CDBSidebarMenuItem icon="user">Gerenciar Artistas</CDBSidebarMenuItem>
-            </a>
+            </NavLink>
           </CDBSidebarMenu>
         </CDBSidebarContent>
       </CDBSidebar>
