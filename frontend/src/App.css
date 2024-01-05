@@ -6,7 +6,7 @@ body, html {
 
 .app-logo {
   padding-left: 50px;
-
+  margin: 2px;
 }
 
 .sidebar {
@@ -14,4 +14,8 @@ body, html {
   height: 100vh;
   float: left;
   overflow: 'scroll initial';
+}
+
+.side-row {
+  padding: 30px;
 }
