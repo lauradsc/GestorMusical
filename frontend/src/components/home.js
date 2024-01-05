@@ -1,3 +1,4 @@
+//Página de apresentação
 import Carousel from 'react-bootstrap/Carousel';
 import slide01 from '../assets/slide01.jpg';
 import slide02 from '../assets/slide02.jpg';
@@ -30,6 +31,7 @@ const Home = () => {
           />
         </Carousel.Item>
       </Carousel>
+      <h2 className="text-center mt-5">Navegue pelas opções ao lado para descobrir mais</h2>
       </div> 
     );
   };

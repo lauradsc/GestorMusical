@@ -1,4 +1,4 @@
-
+//Menu de navegação entre as páginas
 import React from 'react';
 import {Navbar} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';

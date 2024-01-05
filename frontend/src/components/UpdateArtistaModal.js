@@ -1,7 +1,8 @@
+//Modal para atualizar artista
 import React,{Component} from 'react';
 import {Modal, Col, Row, Form, Button} from 'react-bootstrap';
 import {FormControl, FormGroup, FormLabel} from 'react-bootstrap';
-import { UpdateArtista } from '../services/artista_service.js';
+import { UpdateArtista } from '../services/ArtistaService.js';
 
 const UpdateArtistaModal = (props) => {
     const Enviar = (e) => {
@@ -15,7 +16,6 @@ const UpdateArtistaModal = (props) => {
             alert("Falha ao atualizar artista");
         })
     }
-};
 
     return(
         <div className="container">
@@ -31,13 +31,13 @@ const UpdateArtistaModal = (props) => {
                     <Col md={6}>
                     <Form.Group controlId="Nome">
                         <Form.Label>Nome</Form.Label>
-                        <Form.Control type="text" name="Nome" required placeholder="" />
+                        <Form.Control type="text" name="Nome" required placeholder="" defaultValue={props.artista.Nome}/>
                     </Form.Group>
                     </Col>
                     <Col md={6}>
                     <Form.Group controlId="Tipo">
                         <Form.Label>Tipo</Form.Label>
-                        <Form.Control type="text" name="Tipo" required placeholder="" />
+                        <Form.Control type="text" name="Tipo" required placeholder="" defaultValue={props.artista.Tipo}/>
                     </Form.Group>
                     </Col>
                 </Row>
@@ -45,13 +45,13 @@ const UpdateArtistaModal = (props) => {
                     <Col md={6}>
                     <Form.Group controlId="Email">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="text" name="Email" required placeholder="" />
+                        <Form.Control type="text" name="Email" required placeholder="" defaultValue={props.artista.Email}/>
                     </Form.Group>
                     </Col>
                     <Col md={6}>
                     <Form.Group controlId="Documento">
                         <Form.Label>Documento</Form.Label>
-                        <Form.Control type="text" name="Documento" required placeholder="" />
+                        <Form.Control type="text" name="Documento" required placeholder="" defaultValue={props.artista.Documento}/>
                     </Form.Group>
                     </Col>
                 </Row>
@@ -72,6 +72,7 @@ const UpdateArtistaModal = (props) => {
                 </Modal.Footer>
             </Modal>
         </div>
-    )
+    );
+};
 
 export default UpdateArtistaModal;

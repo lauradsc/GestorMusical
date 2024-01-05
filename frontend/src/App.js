@@ -1,11 +1,11 @@
-//importando todos os meus componentes necessários para desenvolvimento no meu arquivo de compilação principal
+//Importando todos os meus componentes necessários para desenvolvimento no meu arquivo de compilação principal
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'; //biblioteca de rotas para permitir navegação entre diferentes páginas
-import Navigation from './components/navigation.js';
-import Home from './components/home.js';
-import Artistas from './components/artistas_lista.js';
-import GerenciarArtistas from './components/gerenciar.js';
+import Navigation from './components/Navigation.js';
+import Home from './components/Home.js';
+import Artistas from './components/ArtistaLista.js';
+import GerenciarArtistas from './components/Gerenciar.js';
 
 function App() {
   return (

@@ -1,6 +1,7 @@
+//Listagem dos artistas
 import React, {useEffect, useState} from 'react';
 import { Table } from 'react-bootstrap';
-import { getArtistas } from '../services/artista_service';
+import { getArtistas } from '../services/ArtistaService';
 import '../App.css';
 
 const Artistas = () => {

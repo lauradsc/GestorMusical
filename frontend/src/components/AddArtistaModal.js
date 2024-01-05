@@ -1,7 +1,8 @@
+//Modal para adicionar artista
 import react from 'react';
 import {Modal, Col, Row, Form, Button} from 'react-bootstrap';
 import {FormControl, FormGroup, FormLabel} from 'react-bootstrap';
-import { addArtista } from '../services/artista_service.js';
+import { AddArtista } from '../services/ArtistaService.js';
 
 const AddArtistaModal = (props) => {
 
