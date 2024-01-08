@@ -63,6 +63,9 @@ São necessários configurações de ambientes separados para o backend (Django)
 O código apresenta as telas requisitadas e também todo o desenvolvimento para o crud, utilizando do backend como principal fonte e um front básico feito com react-bootstrap para exibir.
 Por ser uma área nova para mim, peço perdão outros eventuais erros e me esforcei para que pudesse entregar o máximo que consigo!</p>
 
+ <p align="left">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=IN%20DEVELOPMENT&color=GREEN&style=for-the-badge"/>
+   
 <h2>Muito obrigada pela oportunidade!😊</h2>
 
 <h3>Aqui está uma foto do erro ocorrido: </h3>
