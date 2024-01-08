@@ -59,7 +59,7 @@ São necessários configurações de ambientes separados para o backend (Django)
 <p><code>npm start</code></p>
 
 <h2>Nota</h2>
-<p> Infelizmente, está ocorrendo um erro de rede que não está permitindo que eu prossiga com o projeto corretamente, recorri a resoluções de cors, firewall e verificar se o caminho está realmente correto, mas não estou conseguindo resolver a tempo. Peço perdão pelo ocorrido e estou aberta a ajuda.
+<p> Infelizmente, está ocorrendo um erro de rede que não está permitindo que eu prossiga com o projeto corretamente, recorri a resoluções de cors, firewall e verificar se o caminho está realmente correto, mas não estou conseguindo resolver a tempo. Peço perdão pelo ocorrido e estou aberta a ajuda, para até aprender mais se for possível!
 O código apresenta as telas requisitadas e também todo o desenvolvimento para o crud, utilizando do backend como principal fonte e um front básico feito com react-bootstrap para exibir.
 Por ser uma área nova para mim, peço perdão outros eventuais erros e me esforcei para que pudesse entregar o máximo que consigo!</p>
 
