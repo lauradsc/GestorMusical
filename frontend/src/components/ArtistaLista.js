@@ -25,11 +25,11 @@ const Artistas = () => {
                     <Table striped bordered hover className="react-bootstrap-table text-center" id="dataTable">
                     <thead>
                         <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Tipo</th>
-                        <th>Email</th>
-                        <th>Documento</th>
+                        <th className="bg-warning text-white">ID</th>
+                        <th className="bg-warning text-white">Nome</th>
+                        <th className="bg-warning text-white">Tipo</th>
+                        <th className="bg-warning text-white">Email</th>
+                        <th className="bg-warning text-white">Documento</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -1,7 +1,6 @@
 //Modal para atualizar artista
 import React,{Component} from 'react';
 import {Modal, Col, Row, Form, Button} from 'react-bootstrap';
-import {FormControl, FormGroup, FormLabel} from 'react-bootstrap';
 import { UpdateArtista } from '../services/ArtistaService.js';
 
 const UpdateArtistaModal = (props) => {
@@ -57,19 +56,13 @@ const UpdateArtistaModal = (props) => {
                 </Row>
                 <Row>
                     <Col>
-                    <Button variant="primary" type="submit" className="w-100 mt-4">
+                    <Button variant="warning" type="submit" className="w-100 mt-4">
                         Adicionar
                     </Button>
                     </Col>
                 </Row>
                 </Form>
             </Modal.Body>
-                <Modal.Footer>
-                <Button variant="danger" type="submit" onClick={props.onHide}>
-                        Close
-                </Button>
-
-                </Modal.Footer>
             </Modal>
         </div>
     );
