@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 .app-logo {
@@ -18,4 +19,28 @@ body, html {
 
 .side-row {
   padding: 30px;
+}
+
+.imgMusic {
+  width: 20%;
+}
+
+.main-text {
+  margin-top: 22%;
+  font-size: 43px;
+  color: #ecbc2c;
+}
+
+.main-img {
+  width: 130%;
+  margin-top: -27%;
+}
+
+.container {
+  margin-top: 12%;
+  margin-left: 25%;
+}
+
+.sub-main-text {
+  color: #c39b21;
 }
