@@ -62,9 +62,6 @@ São necessários configurações de ambientes separados para o backend (Django)
 <p> Infelizmente, está ocorrendo um erro de rede que não está permitindo que eu prossiga com o projeto corretamente, recorri a resoluções de cors, firewall e verificar se o caminho está realmente correto, mas não estou conseguindo resolver a tempo. Peço perdão pelo ocorrido e estou aberta a ajuda, para até aprender mais se for possível!
 O código apresenta as telas requisitadas e também todo o desenvolvimento para o crud, utilizando do backend como principal fonte e um front básico feito com react-bootstrap para exibir.
 Por ser uma área nova para mim, peço perdão outros eventuais erros e me esforcei para que pudesse entregar o máximo que consigo!</p>
-
- <p align="left">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=IN%20DEVELOPMENT&color=GREEN&style=for-the-badge"/>
    
 <h2>Muito obrigada pela oportunidade!😊</h2>
 
@@ -72,5 +69,8 @@ Por ser uma área nova para mim, peço perdão outros eventuais erros e me esfor
 
 <img src="https://github.com/lauradsc/GestorMusical/assets/99484087/377392ad-5cce-4f8c-a254-788e4216e356">
 
+<h3>Foto atual do front do site:</h3>
+
+<img src="https://github.com/lauradsc/GestorMusical/assets/99484087/54523cd3-598c-470e-88f8-0bb33dc5d575">
 
 
