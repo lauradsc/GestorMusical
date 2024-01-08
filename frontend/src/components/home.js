@@ -1,38 +1,21 @@
 //Página de apresentação
-import Carousel from 'react-bootstrap/Carousel';
-import slide01 from '../assets/slide01.jpg';
-import slide02 from '../assets/slide02.jpg';
-import slide03 from '../assets/slide03.jpg';
+import MusicGirl from '../assets/musicgirl.svg';
+import '../App.css';
+
 
 const Home = () => {
     return (
-    <div className="row">
-    <div className="container h1 text-center mt-5 m-5"> Bem-vindo ao seu melhor gerenciador musical! </div>
-       <Carousel variant="dark">
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slide01}
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slide02}
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slide03}
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
-      <h2 className="text-center mt-5">Navegue pelas opções ao lado para descobrir mais</h2>
-      </div> 
+      <div className="container justify-content-center align-items-center">
+      <div className="row">
+        <div className="col-xs-6 col-md-4 text-center">
+          <h1 className="main-text">Bem-vindo ao<br></br> Gerenciador Musical!</h1>
+          <p className="sub-main-text">Navegue nas opções ao lado para conhecer mais :)</p>
+        </div>
+        <div className="col-xs-12 col-md-8 text-center">
+          <img src={MusicGirl} className="main-img img-fluid" alt="Imagem Musical" />
+        </div>
+      </div>
+    </div>
     );
   };
   
