@@ -65,7 +65,7 @@ const GerenciarArtistas = () => {
         <div className="container-fluid side-container">
                 <div className="row side-row" >
                     <p id="before-table"></p>
-                    <Button className="mr-2 w-25" variant="primary" onClick={addArtista}>Adicionar Artista</Button>
+                    <Button className="mr-2 w-25 bg-warning" variant="primary" onClick={addArtista}>Adicionar Artista</Button>
                     <AddArtistaModal show={addArtista} onHide={AddArtistaFechar} setUpdated={setIsUpdated}></AddArtistaModal>
                     <Table striped bordered hover className="react-bootstrap-table text-center mt-4" id="dataTable">
                     <thead>

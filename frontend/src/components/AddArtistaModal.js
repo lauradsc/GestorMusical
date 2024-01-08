@@ -57,18 +57,13 @@ const AddArtistaModal = (props) => {
                 </Row>
                 <Row>
                     <Col>
-                    <Button variant="primary" type="submit" className="w-100 mt-4">
+                    <Button variant="warning" type="submit" className="w-100 mt-4 text-white">
                         Adicionar
                     </Button>
                     </Col>
                 </Row>
                 </Form>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="danger" onClick={props.onHide}>
-                    Fechar
-                </Button>
-            </Modal.Footer>
             </Modal>
         );
 };
