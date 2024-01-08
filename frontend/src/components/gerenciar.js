@@ -88,7 +88,7 @@ const GerenciarArtistas = () => {
                             <td> 
                                 <Button className="mr-2" variant="primary" onClick={event => atualizarArtista(event, art)}><TfiWrite /></Button>{''}
                                 <UpdateArtistaModal show={UpdateArtistaModal} onHide={UpdateModalFechar} setUpdated={setIsUpdated} artista={updateArtista} ></UpdateArtistaModal>
-                                <Button className="mr-2" variant="danger" onClick={event => deletarArtista(event, artistaID)}><MdDelete /></Button>{''}
+                                <Button className="mr-2" variant="danger" onClick={event => deletarArtista(event, art)}><MdDelete /></Button>{''}
                             </td>
                             </tr>
                         )}
