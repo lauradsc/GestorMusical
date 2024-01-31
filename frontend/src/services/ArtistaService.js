@@ -1,4 +1,4 @@
-//Aqui, utiliza-se a biblioteca Axios para fazer a manipulaçãp de nossos dados e operar o CRUD (Create, Read, Update, Delete)
+//Aqui, utiliza-se a biblioteca Axios para fazer as requisições de nossos dados e operar o CRUD (Create, Read, Update, Delete)
 import axios from 'axios';
 
 export function getArtistas() {
